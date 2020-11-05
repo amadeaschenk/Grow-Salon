@@ -201,7 +201,7 @@ header {
   position: fixed;
   top: 0px;
   width: 100vw;
-  max-height: 500px;
+  max-height: 40vw;
   padding-bottom: 3%;
 }
 
@@ -212,26 +212,22 @@ display: grid;
 grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 grid-column-gap: 2%;
 padding:2% auto;
-margin: 300px auto 20vh auto;
+margin: 20vh auto 5vh auto;
 font-size: 1em;
 }
 
-.spacer {display: block;
-background-color: ivory;
-width: 100vw;
-max-height: 700px;
-}
+
 
 .content {
   display: block;
   padding: 2%;
-  margin: 20px auto 40px auto;
+  margin: auto;
 }
 
 .profile {
   display: block;
   padding: 2%;
-  margin: auto;
+  margin: 20px auto;
 }
 
 p {display: block;
@@ -254,9 +250,14 @@ a {
 
 }
 
+a.althover:hover {
+  color: snow;
+}
+
+
 
 .photo {
-  clip-path: circle(40%);
+
   width:80vw;
 }
 
@@ -269,38 +270,51 @@ a {
 .subfoot {
   display: block;
   background-color: #F9C3AF;
-  width: 100vw;
-  height: 30vh;
+
 }
 
 #subfoot {
   display: block;
-    padding: 6%;
-    margin:auto;
+    padding: 2%;
+    margin: auto;
     text-align: center;
     color: snow;
-    font-size: 1.4em
+    font-size: 2em;
+    width: 100vw;
+
 }
 
 footer {
   display: block;
   background-color: snow;
   width: 100vw;
-  max-height: 200px;
 
 }
 
 #foot {
   display: block;
-    padding: 4%;
+    padding: 1%;
     margin:auto;
     text-align: center;
     color: black;
 }
 
 #top {
-  text-align: center;
+  text-align:center;
   color: snow;
+  margin: auto;
+  padding: 2%;
+}
+
+b {
+  margin-top: 600px;
+}
+
+i {
+  display: inline-block;
+
+  color: snow;
+  margin: auto;
 
 }
 
@@ -308,8 +322,9 @@ footer {
 
 #indeximage {display: block;
   padding: 1%;
-  margin: auto;
+  margin: 30vw auto;
   align: center;
+  width: 80vw;
 }
 
 .fade-in {
@@ -362,3 +377,25 @@ footer {
   100% {
     opacity:1;
 }
+
+/* media queries below */
+
+@media only screen and (min-width:1000px){
+    /* ---- Desktop styles below ---- */
+
+    role=navigation {
+      display: grid;
+      /* Change previous grid */
+      grid-auto-flow: column;
+      grid-gap: 2%;
+      padding:2% auto;
+  }
+
+    :navigation a{
+      margin: 10px auto;
+      text-decoration: none;
+      color: #322311;
+      font-weight: normal;
+      font-size: 30%;
+
+  }
