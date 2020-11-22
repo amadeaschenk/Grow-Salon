@@ -190,18 +190,18 @@ img {
 }
 
 #logo {
- width: 60vw;
+ width: 40vw;
  padding: 1%;
- margin: 6vw auto;
+ margin: 5vw auto;
 }
 
 header {
   display: block;
   background-color: snow;
-  position: fixed;
+  position: static;
   top: 0px;
   width: 100vw;
-  max-height: 40vw;
+  max-height: 20vw;
   padding-bottom: 3%;
 }
 
@@ -212,7 +212,7 @@ display: grid;
 grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 grid-column-gap: 2%;
 padding:2% auto;
-margin: 20vh auto 5vh auto;
+margin: 3vh auto 5vh auto;
 font-size: 1em;
 }
 
@@ -227,7 +227,7 @@ font-size: 1em;
 .profile {
   display: block;
   padding: 2%;
-  margin: 20px auto;
+  margin: auto;
 }
 
 p {display: block;
@@ -258,7 +258,7 @@ a.althover:hover {
 
 .photo {
 
-  max-width: 300px;
+width: 400px;
 }
 
 .hero {
@@ -339,10 +339,10 @@ i {
     header {
       display: block;
       background-color: snow;
-      position: fixed;
+      position: static;
       top: 0px;
       width: 100vw;
-      max-height: 200px;
+      max-height: 20vw;
       padding-bottom: 3%;
     }
 
